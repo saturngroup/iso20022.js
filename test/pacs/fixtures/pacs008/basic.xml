@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08">
+  <FIToFICstmrCdtTrf>
+    <GrpHdr>
+      <MsgId>GW-2025-10-06-001</MsgId>
+      <CreDtTm>2025-10-06T10:15:00Z</CreDtTm>
+      <NbOfTxs>1</NbOfTxs>
+    </GrpHdr>
+    <CdtTrfTxInf>
+      <PmtId>
+        <InstrId>GW-REF-001</InstrId>
+        <EndToEndId>E2E-001</EndToEndId>
+        <TxId>TX-001</TxId>
+      </PmtId>
+      <IntrBkSttlmAmt Ccy="EUR">1000.00</IntrBkSttlmAmt>
+      <ChrgBr>SLEV</ChrgBr>
+      <Cdtr><Nm>Ant</Nm></Cdtr>
+      <CdtrAcct><Id><IBAN>FR7612345678901234567890185</IBAN></Id></CdtrAcct>
+      <RmtInf><Ustrd>Invoice 2025-0917</Ustrd></RmtInf>
+      <InstgAgt><FinInstnId><BICFI>GATEFRPPXXX</BICFI></FinInstnId></InstgAgt>
+      <InstdAgt><FinInstnId><BICFI>MCBHKHKHXXX</BICFI></FinInstnId></InstdAgt>
+    </CdtTrfTxInf>
+  </FIToFICstmrCdtTrf>
+</Document>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:pacs.008.001.10">
+  <FIToFICstmrCdtTrf>
+    <GrpHdr>
+      <MsgId>MSG-2025-10-16-200</MsgId>
+      <CreDtTm>2025-10-16T12:30:00Z</CreDtTm>
+      <NbOfTxs>2</NbOfTxs>
+    </GrpHdr>
+
+    <CdtTrfTxInf>
+      <PmtId>
+        <EndToEndId>E2E-9001</EndToEndId>
+      </PmtId>
+      <Amt>
+        <InstdAmt Ccy="EUR">100.00</InstdAmt>
+      </Amt>
+      <Cdtr><Nm>VENDOR A</Nm></Cdtr>
+      <CdtrAcct><Id><IBAN>FR7630006000011234567890189</IBAN></Id></CdtrAcct>
+    </CdtTrfTxInf>
+
+    <CdtTrfTxInf>
+      <PmtId>
+        <EndToEndId>E2E-9002</EndToEndId>
+      </PmtId>
+      <IntrBkSttlmAmt Ccy="JPY">5000</IntrBkSttlmAmt>
+      <Cdtr><Nm>VENDOR B</Nm></Cdtr>
+      <CdtrAcct><Id><IBAN>JP11XXXX000000000000000</IBAN></Id></CdtrAcct>
+    </CdtTrfTxInf>
+  </FIToFICstmrCdtTrf>
+</Document>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:pacs.002.001.12">
+  <FIToFIPmtStsRpt>
+    <GrpHdr>
+      <MsgId>MSG-2025-10-16-001</MsgId>
+      <CreDtTm>2025-10-16T13:00:00Z</CreDtTm>
+      <InitgPty>
+        <Nm>TEST BANK</Nm>
+      </InitgPty>
+    </GrpHdr>
+    <OrgnlGrpInfAndSts>
+      <OrgnlMsgId>ORIG-GRP-12345</OrgnlMsgId>
+      <GrpSts>ACSP</GrpSts>
+      <StsRsnInf>
+        <Rsn><Cd>G000</Cd></Rsn>
+        <AddtlInf>Received and validated</AddtlInf>
+      </StsRsnInf>
+    </OrgnlGrpInfAndSts>
+  </FIToFIPmtStsRpt>
+</Document>

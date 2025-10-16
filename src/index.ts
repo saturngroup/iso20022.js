@@ -60,7 +60,10 @@ export type {
   ACHLocalInstrument,
 } from './lib/types';
 
-export { ACHLocalInstrumentCode, ACHLocalInstrumentCodeDescriptionMap } from './lib/types';
+export {
+  ACHLocalInstrumentCode,
+  ACHLocalInstrumentCodeDescriptionMap,
+} from './lib/types';
 
 // pain.001
 export type { SWIFTCreditPaymentInitiationConfig } from './pain/001/swift-credit-payment-initiation';
@@ -103,3 +106,4 @@ export {
   InvalidXmlError,
   InvalidXmlNamespaceError,
 } from './errors';
+export * from './pacs';
