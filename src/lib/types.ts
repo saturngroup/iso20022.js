@@ -312,6 +312,38 @@ export interface ABAAgent {
  */
 export type Agent = BICAgent | ABAAgent;
 
+export interface GenericSchemeName {
+  code?: string;
+  proprietary?: string;
+}
+
+export interface GenericIdentification {
+  id: string;
+  schemeName?: GenericSchemeName;
+  issuer?: string;
+}
+
+export interface FinancialInstitutionIdentification {
+  bicfi?: string;
+  clearingSystemMemberId?: string;
+  lei?: string;
+  name?: string;
+  postalAddress?: StructuredAddress;
+  other?: GenericIdentification;
+}
+
+export interface BranchData {
+  id?: string;
+  lei?: string;
+  name?: string;
+  postalAddress?: StructuredAddress;
+}
+
+export interface BranchAndFinancialInstitutionIdentification {
+  financialInstitutionId?: FinancialInstitutionIdentification;
+  branchId?: BranchData;
+}
+
 /**
  * ACH Local Instrument Codes as defined in NACHA standards.
  * These codes identify the specific type of ACH transaction.
@@ -355,6 +387,8 @@ export interface MessageHeader {
   originalMessageHeader?: Partial<MessageHeader>;
   requestType?: string;
   queryName?: string;
+  instructingAgent?: BranchAndFinancialInstitutionIdentification;
+  instructedAgent?: BranchAndFinancialInstitutionIdentification;
 }
 
 /* From ISO specifications 

@@ -1,6 +1,14 @@
-export * from './002/payment-status-report';
-export * from './002/types';
-export * from './008/customer-credit-transfer';
-export * from './008/types';
-export * from './002/build-acsp';
-export * from './008/build-credit-transfer';
+export {
+  FIToFICustomerCreditTransfer,
+  type FIToFICustomerCreditTransferData,
+  type Pacs008CreditTransfer,
+} from "./008/fi-to-fi-customer-credit-transfer";
+
+export {
+  FIToFIPaymentStatusReport,
+  type FIToFIPaymentStatusReportData,
+  type OriginalTransactionStatus,
+  type Pacs002StatusCode,
+  type StatusReason,
+  type OriginalGroupInformation,
+} from "./002/fi-to-fi-payment-status-report";

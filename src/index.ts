@@ -44,6 +44,13 @@
 
 export { default as ISO20022 } from './iso20022';
 
+// Re-export commonly used helpers
+export { parseAmountToMinorUnits, exportAmountToString } from "./parseUtils";
+
+// Re-export interfaces
+export type { GenericISO20022Message, GenericISO20022MessageFactory, ISO20022MessageTypeName } from "./lib/interfaces";
+export { ISO20022Messages, getISO20022Implementation, registerISO20022Implementation } from "./lib/interfaces";
+
 export type {
   Party,
   Account,
@@ -106,4 +113,12 @@ export {
   InvalidXmlError,
   InvalidXmlNamespaceError,
 } from './errors';
+
+// pacs
 export * from './pacs';
+
+// camt
+export * from "./camt";
+
+// lib
+export * from "./lib";

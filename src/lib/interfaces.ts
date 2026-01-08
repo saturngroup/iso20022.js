@@ -11,6 +11,9 @@ export const ISO20022Messages: {[msg: string]: ISO20022MessageTypeName} = {
   
   PAIN_001: "PAIN.001",
   PAIN_002: "PAIN.002",
+
+  PACS_002: "PACS.002",
+  PACS_008: "PACS.008",
 };
 
 export interface GenericISO20022Message {
@@ -68,6 +71,7 @@ export class XML {
         if (isLeafNode && ['Cd', 'NtryRef'].includes(tagName)) return undefined;
         return tagValue;
       },
+      numberParseOptions: { hex: false, leadingZeros: false } as any,
     });
   }
 
