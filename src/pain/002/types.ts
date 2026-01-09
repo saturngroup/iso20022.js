@@ -1,12 +1,5 @@
 import { Party } from '../../lib/types';
 
-/**
- * Represents the original group information in a payment status report.
- */
-export interface OriginalGroupInformation {
-  /** The original message ID associated with the group. */
-  originalMessageId: string;
-}
 
 /**
  * Represents the type of status in a payment status report.
