@@ -10,5 +10,4 @@ export {
   type OriginalTransactionStatus,
   type Pacs002StatusCode,
   type StatusReason,
-  type OriginalGroupInformation,
 } from "./002/fi-to-fi-payment-status-report";

@@ -2,6 +2,18 @@ import { Currency } from 'dinero.js';
 import { Alpha2Country } from './countries';
 
 /**
+ * Represents the original group information in a payment status report.
+ */
+export interface OriginalGroupInformation {
+  /** The original message ID associated with the group. */
+  originalMessageId?: string;
+  /** The original message name identification code that specifies the message type. */
+  originalMessageNameId?: string;
+  /** The date and time when the original message was created. */
+  originalCreationDateTime?: Date;
+}
+
+/**
  * Represents a payment instruction with essential details.
  */
 export interface PaymentInstruction {

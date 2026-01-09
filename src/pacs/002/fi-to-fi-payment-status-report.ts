@@ -10,7 +10,7 @@ import {
   type GenericISO20022Message,
   type ISO20022MessageTypeName,
 } from "../../iso20022";
-import type { MessageHeader } from "../../lib/types";
+import type { MessageHeader, OriginalGroupInformation } from "../../lib/types";
 import {
   exportMessageHeader,
   parseMessageHeader,
@@ -24,12 +24,6 @@ export type Pacs002StatusCode =
   | "PDNG"
   | "RJCR"
   | "ACCP";
-
-export interface OriginalGroupInformation {
-  originalMessageId?: string;
-  originalMessageNameId?: string;
-  originalCreationDateTime?: Date;
-}
 
 export interface StatusReason {
   code?: string;

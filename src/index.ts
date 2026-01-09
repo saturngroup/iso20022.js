@@ -84,7 +84,6 @@ export { ACHCreditPaymentInitiation } from './pain/001/ach-credit-payment-initia
 
 // pain.002
 export type {
-  OriginalGroupInformation,
   StatusType,
   PaymentStatus as Status,
   BaseStatusInformation as BaseStatus,
