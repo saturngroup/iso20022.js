@@ -1,5 +1,5 @@
 import { XMLParser } from 'fast-xml-parser';
-import { Party } from '../../lib/types';
+import { OriginalGroupInformation, Party } from '../../lib/types';
 import { parseParty } from '../../parseUtils';
 import {
   parseGroupStatusInformation,
@@ -9,7 +9,6 @@ import {
 import {
   StatusInformation,
   PaymentStatus,
-  OriginalGroupInformation,
 } from './types';
 
 /**

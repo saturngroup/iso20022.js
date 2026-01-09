@@ -6,7 +6,7 @@ import { Alpha2Country } from './countries';
  */
 export interface OriginalGroupInformation {
   /** The original message ID associated with the group. */
-  originalMessageId?: string;
+  originalMessageId: string;
   /** The original message name identification code that specifies the message type. */
   originalMessageNameId?: string;
   /** The date and time when the original message was created. */
